@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1#title {
+            text-align: center;
+            color: #333;
+        }
+        
+        p#description {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        form#survey-form {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        button#submit {
+            width: 100%;
+            background: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button#submit:hover {
+            background: #4cae4c;
+        }
+        
+        
+        </style>
+        
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form.</p>
+    
+    <form id="survey-form">
+       <label id="name-label" for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age (optional):</label>
+        <input type="number" id="number" name="age" min="10" max="100" placeholder="Age">
+
+        <!-- Dropdown -->
+        <label for="dropdown">Select an option:</label>
+        <select id="dropdown">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options here -->
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Choose an option:</label>
+        <input type="radio" name="option" value="radio1"> Option 1<br>
+        <input type="radio" name="option" value="radio2"> Option 2<br>
+
+        <!-- Checkboxes -->
+        <label for="checkboxes">Choose your interests:</label>
+        <input type="checkbox" name="interest" value="interest1"> Interest 1<br>
+        <input type="checkbox" name="interest" value="interest2"> Interest 2<br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
